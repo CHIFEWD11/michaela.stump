@@ -1,0 +1,277 @@
+f
+
+/*------------------     GLOBARL OVERRIDES       -----------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
+/*------------------     UNIVERSAL       -----------------------------*/
+
+
+body {
+  font-size: 12pt;
+}
+
+.global {
+  background-color: black;
+  color: white;
+  font-family: 'Poiret One';
+}
+/*.site { 
+  margin:0 auto;
+  width: 80%;
+}*/
+
+.content {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 3rem;
+    padding: 30px 0px 0px 0px;
+    line-height: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 10px 0px;
+}
+
+
+p, td, th {
+  line-height: 150%;
+}
+
+li {
+  list-style: none;
+}
+
+/*------------------     NAV BAR       -----------------------------*/
+
+.navbar {
+  background-color: black;
+  z-index: 10;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: grey;
+  z-index: 10;
+
+}
+
+.navbar li {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a {
+  display: block;
+  padding: 0px;
+
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+
+.navbar li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 16px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.navbar li a p:first-of-type {
+    background: red;
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/hamburger.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: fixed;
+  text-indent: -9999px;
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+/*------------------     CONTENT          -----------------------------*/
+.content{
+ overflow: hidden;
+ margin:0 auto;
+ width: 80%;
+}
+
+/*------------------     TITLE BAR       -----------------------------*/
+
+.title {
+  padding: 30px;
+  margin-top: 30px;
+}
+
+
+
+/*------------------        About      -----------------------------*/
+
+.about {
+  width: 100%;
+}
+
+
+/*------------------        TEAM      -----------------------------*/
+
+.team_pics {
+  width: 70%;
+  margin: 0 auto;
+}
+.team_wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.team_wrap p {
+  margin: 0 auto;
+  vertical-align: middle;
+  line-height: 200px;
+}
+.team_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.team_wrap:hover .team_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*------------------     Beer Table    -----------------------------*/
+
+table, th, td {
+    border: 1px solid grey;
+    border-radius: 25px;
+}
+
+.beer-table {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+
+th {
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+}
+
+.beers {
+  padding: 10pt 0;
+}
+
+/*------------------     CONTACT US    -----------------------------*/
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0px auto;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #262626;
+}
+
+.contact-us {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.contact-us ul li {
+  padding: 10px 0px  2px 0px;
+}
+
+form p {
+  margin: 10px 0px;
+}
+
+/*------------------     RESPONSIVE   -----------------------------*/
+
+@media screen and (max-width: 500px) {
+  
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li a {
+    display: block;
+    float: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+
+  p {
+   margin: 0 0 10px;
+  }
+
+    .hamburger {
+   position: fixed;
+    display: block;
+    right: 10px;
+    top: 10px;
+  }
+
+  h1 {
+   padding: 130px 0px 10px 0px;
+  }
+}
+
+
+
+/*------------------     next   -----------------------------*/
+
+
