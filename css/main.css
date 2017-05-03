@@ -25,10 +25,6 @@ body {
   color: white;
   font-family: 'Poiret One';
 }
-/*.site { 
-  margin:0 auto;
-  width: 80%;
-}*/
 
 .content {
   text-align: center;
@@ -55,10 +51,14 @@ li {
   list-style: none;
 }
 
+
+.banner {
+  padding: 15%;
+}
+
 /*------------------     NAV BAR       -----------------------------*/
 
 .navbar {
-  background-color: black;
   z-index: 10;
 
 }
@@ -118,17 +118,65 @@ header {
   justify-content: flex-end;
 }
 
-/*------------------     CONTENT          -----------------------------*/
+/*------------------     CONTENT & BANNERS         -----------------------------*/
 .content{
  overflow: hidden;
  margin:0 auto;
- width: 80%;
 }
+
+.title_banner {
+  overflow: hidden;
+  background-image: url(../images/coworking.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about_banner {
+  overflow: hidden;
+  background-image: url(../images/grey.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team_banner {
+  overflow: hidden;
+  background-image: url(../images/wood.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.beers_banner {
+  overflow: hidden;
+  background-image: url(../images/coworking.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-us_banner {
+  overflow: hidden;
+  background-image: url(../images/coworking.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.micaela_banner{
+  overflow: hidden;
+  background-image: url(../images/coworking.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /*------------------     TITLE BAR       -----------------------------*/
 
+
 .title {
-  padding: 30px;
   margin-top: 30px;
 }
 
@@ -144,7 +192,7 @@ header {
 /*------------------        TEAM      -----------------------------*/
 
 .team_pics {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 .team_wrap {
@@ -164,12 +212,12 @@ header {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.72);
-  color: #fff;
+  color: white;
   visibility: hidden;
   opacity: 0;
 
   /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  transition: opacity .05s, visibility .2s;
 }
 
 .team_wrap:hover .team_description {
@@ -242,8 +290,8 @@ form p {
 
 @media screen and (max-width: 500px) {
   
-  .navbar {
-    flex-direction: column;
+  .navbar li {
+    float: none;
   }
 
   .navbar li a {
