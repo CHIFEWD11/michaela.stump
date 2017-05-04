@@ -15,17 +15,21 @@ f
 
 /*------------------     UNIVERSAL       -----------------------------*/
 
-
-body {
-  font-size: 12pt;
-}
-
 .global {
-  background-color: black;
   color: white;
   font-family: 'Poiret One';
+  font-size: 14pt;
+  background-color: black;
+
 }
 
+.site {
+/*  background-image: url(../images/wood1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+}
 .content {
   text-align: center;
 }
@@ -33,8 +37,8 @@ body {
 
 h1 {
   font-size: 3rem;
-    padding: 30px 0px 0px 0px;
-    line-height: 100%;
+  padding: 30px 0px 0px 0px;
+  line-height: 100%;
 }
 
 h2 {
@@ -53,7 +57,8 @@ li {
 
 
 .banner {
-  padding: 15%;
+  padding: 5%;
+  margin: 5% 0px;
 }
 
 /*------------------     NAV BAR       -----------------------------*/
@@ -126,7 +131,7 @@ header {
 
 .title_banner {
   overflow: hidden;
-  background-image: url(../images/coworking.jpg);
+  background-image: url(../images/wood1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -192,7 +197,7 @@ header {
 /*------------------        TEAM      -----------------------------*/
 
 .team_pics {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 .team_wrap {
@@ -228,8 +233,8 @@ header {
 /*------------------     Beer Table    -----------------------------*/
 
 table, th, td {
-    border: 1px solid grey;
-    border-radius: 25px;
+  border: 1px solid grey;
+  text-align: center;
 }
 
 .beer-table {
@@ -240,7 +245,6 @@ table, th, td {
 
 
 th {
-  text-align: center;
   font-weight: bold;
   background-color: black;
 }
@@ -314,7 +318,7 @@ form p {
   }
 
   h1 {
-   padding: 130px 0px 10px 0px;
+   padding: 0px;
   }
 }
 
