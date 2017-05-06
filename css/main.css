@@ -127,14 +127,15 @@ header {
 .content{
  overflow: hidden;
  margin:0 auto;
+ height: 100%;
 }
 
 .title_banner {
   overflow: hidden;
-  background-image: url(../images/wood1.jpg);
-  background-position: center center;
+  background-image: url(../images/test113.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 900px;
 }
 
 .about_banner {
