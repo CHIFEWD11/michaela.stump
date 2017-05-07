@@ -26,3 +26,5 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     console.log("please scroll");
 
 });
+
+$('beer-table').fixedHeaderTable({ footer: true, cloneHeadToFoot: false, fixedColumn: true });

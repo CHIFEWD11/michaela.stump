@@ -13,23 +13,19 @@ f
 }
 
 
+
+
+
 /*------------------     UNIVERSAL       -----------------------------*/
 
 .global {
-  color: white;
+  color: #978F84;
   font-family: 'Poiret One';
   font-size: 14pt;
-  background-color: black;
+  background-color: #121210;
 
 }
 
-.site {
-/*  background-image: url(../images/wood1.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
-
-}
 .content {
   text-align: center;
 }
@@ -72,7 +68,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: grey;
+  background-color: #978F84;
   z-index: 10;
 
 }
@@ -97,16 +93,12 @@ header {
 .navbar li a {
   float: left;
   display: block;
-  color: white;
+  color: #D9D9DB;
   text-align: center;
   margin: 16px 16px;
   text-decoration: none;
   font-size: 1rem;
   line-height: 1rem;
-}
-
-.navbar li a p:first-of-type {
-    background: red;
 }
 
 .hamburger {
@@ -130,52 +122,35 @@ header {
  height: 100%;
 }
 
-.title_banner {
+.banner {
   overflow: hidden;
-  background-image: url(../images/test113.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 300px;
+}
+
+.title_banner {
+  background-color: #4A362F;
 }
 
 .about_banner {
-  overflow: hidden;
-  background-image: url(../images/grey.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #4A362F;
 }
 
 .team_banner {
-  overflow: hidden;
-  background-image: url(../images/wood.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #4A362F;
 }
 
 .beers_banner {
-  overflow: hidden;
-  background-image: url(../images/coworking.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #4A362F;
 }
 
 .contact-us_banner {
-  overflow: hidden;
-  background-image: url(../images/coworking.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #4A362F;
 }
 
 .micaela_banner{
-  overflow: hidden;
-  background-image: url(../images/coworking.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #4A362F;
 }
 
 
@@ -218,7 +193,7 @@ header {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.72);
-  color: white;
+  color: #D9D9DB;
   visibility: hidden;
   opacity: 0;
 
@@ -232,26 +207,38 @@ header {
 }
 
 /*------------------     Beer Table    -----------------------------*/
+table {
+  display: block;
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  background-color: #4A362F;
+  color: #978F84;
+}
 
 table, th, td {
-  border: 1px solid grey;
+  border: 1px solid #978F84;
   text-align: center;
 }
 
 .beer-table {
-  width: 100%;
+  table-layout: auto;
   text-align: left;
-  margin: 0 auto;
 }
 
 
 th {
   font-weight: bold;
-  background-color: black;
+  background-color: #121210;
 }
 
-.beers {
-  padding: 10pt 0;
+td, th {
+  width: 25%;
+}
+
+
+thead {
+  position: relative;
 }
 
 /*------------------     CONTACT US    -----------------------------*/
