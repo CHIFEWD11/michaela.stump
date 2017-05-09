@@ -1,4 +1,4 @@
-f
+
 
 /*------------------     GLOBARL OVERRIDES       -----------------------------*/
 
@@ -19,10 +19,10 @@ f
 /*------------------     UNIVERSAL       -----------------------------*/
 
 .global {
-  color: #978F84;
+  color: red;
   font-family: 'Poiret One';
   font-size: 14pt;
-  background-color: #121210;
+  background-color: #9B805A;
 
 }
 
@@ -68,7 +68,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #978F84;
+  background-color: #9B805A;
   z-index: 10;
 
 }
@@ -86,18 +86,18 @@ header {
 }
 
 .navbar a:hover {
-  color: black;
+  color: #2A1D15;
 }
 
 
 .navbar li a {
   float: left;
   display: block;
-  color: #D9D9DB;
+  color: #D3BF94;
   text-align: center;
-  margin: 16px 16px;
+  margin: 1rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 1rem;
 }
 
@@ -126,31 +126,30 @@ header {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
 }
 
 .title_banner {
-  background-color: #4A362F;
+  background-image: url(../images/coworking.jpg);
 }
 
 .about_banner {
-  background-color: #4A362F;
+  background-image: url(../images/coworking.jpg);
 }
 
 .team_banner {
-  background-color: #4A362F;
+  background-image: url(../images/coworking.jpg);
 }
 
 .beers_banner {
-  background-color: #4A362F;
+  background-image: url(../images/coworking.jpg);
 }
 
 .contact-us_banner {
-  background-color: #4A362F;
+  background-image: url(../images/coworking.jpg);
 }
 
 .micaela_banner{
-  background-color: #4A362F;
+  background-image: url(../images/coworking.jpg);
 }
 
 
@@ -173,7 +172,7 @@ header {
 /*------------------        TEAM      -----------------------------*/
 
 .team_pics {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 .team_wrap {
@@ -212,12 +211,12 @@ table {
   max-height: 200px;
   overflow-y: scroll;
   overflow-x: auto;
-  background-color: #4A362F;
-  color: #978F84;
+  background-color: #9B805A;
+  color: #D3BF94;
 }
 
 table, th, td {
-  border: 1px solid #978F84;
+  border: 1px solid #D3BF94;
   text-align: center;
 }
 
@@ -229,7 +228,7 @@ table, th, td {
 
 th {
   font-weight: bold;
-  background-color: #121210;
+  background-color: #2A1D15;
 }
 
 td, th {
@@ -253,8 +252,8 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -278,6 +277,10 @@ form p {
   margin: 10px 0px;
 }
 
+button {
+  background-color: white;
+}
+
 /*------------------     RESPONSIVE   -----------------------------*/
 
 @media screen and (max-width: 500px) {
@@ -298,7 +301,7 @@ form p {
    margin: 0 0 10px;
   }
 
-    .hamburger {
+  .hamburger {
    position: fixed;
     display: block;
     right: 10px;
@@ -307,6 +310,10 @@ form p {
 
   h1 {
    padding: 0px;
+  }
+
+  .banner {
+    height: 100%;
   }
 }
 

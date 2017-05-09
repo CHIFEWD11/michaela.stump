@@ -7,13 +7,14 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 	</head>
 	<body>
 	<div class="global">
 		<div class="site">
 			<header class="clearfix">
     			<a href="#" class="hamburger js-hamburger" title="Open Navigation">Open Navigation</a>
-			    <div class="navbar js-navigation">
+			    <div class="navbar js-navigation clearfix">
 			      <li><a href="#home">Home</a></li>
 			      <li><a href="#about">About</a></li>
 			      <li><a href="#beers">Beers</a></li>
@@ -227,10 +228,11 @@
 					  <ul>
 					  	<li><label for="name">Name</label></li>
 					    <li><input type="text" id="name" name="name" placeholder="Who is bothering us?"></li>
-					   <li><label for="email">Email</label></li>
-					    <li><input type="text" id="email" name="email" placeholder="How can we bother you?"></li>
+					  
 					    <li><label for="subject">Subject</label></li>
 					   	<li><textarea id="subject" name="subject" placeholder="Why are you bothering us?"></textarea></li></ul>	<p>
+					   	 <li><label for="email">Email</label></li>
+					    <li><input type="text" id="email" name="email" placeholder="How can we bother you?"></li>
 					   	<label for="favoritechild">Is Micaela the favorite child?</label> 
 					   	<input type="radio" name="favoritechild" value="Yes, definitely." label="Yes, definitely.">Yes, definitely.  <input type="radio" name="favoritechild" value="Who else would be?" label="Who else would be?" checked="checked">Who else would be?</p>
 					   	<button type="submit">Submit Form</button>
