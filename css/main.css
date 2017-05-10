@@ -22,7 +22,7 @@ body, html {
 /*------------------     UNIVERSAL       -----------------------------*/
 
 .global {
-  color: red;
+  color: white;
   font-family: 'Inknut Antiqua', serif;
   font-size: 14pt;
   font-weight: 400;
@@ -31,7 +31,7 @@ body, html {
 }
 
 .site {
-  background-image: url(../images/wood1.jpg);
+  background-image: url(../images/greywood.jpg);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -52,8 +52,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 10px 0px;
+  color: rgb(168, 5, 5);\
+  font-weight: 700;
 }
 
 
@@ -75,15 +77,16 @@ li {
 
 .navbar {
   z-index: 10;
-
+  border-bottom: .25rem solid rgb(168, 5, 5);
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: red;
+  background-color: rgb(43, 44, 41);
   z-index: 10;
+
 
 }
 
@@ -100,7 +103,7 @@ header {
 }
 
 .navbar a:hover {
-  color: black;
+  color: rgb(168, 5, 5);
 }
 
 
@@ -170,17 +173,15 @@ background-color: rgba(43, 44, 41, .72)
 
 /*------------------     TITLE BAR       -----------------------------*/
 
-
-.title {
-  margin-top: 30px;
+.title img {
+  max-width: 30%;
 }
-
-
 
 /*------------------        About      -----------------------------*/
 
 .about {
-  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 
@@ -188,28 +189,30 @@ background-color: rgba(43, 44, 41, .72)
 table {
   display: block;
   max-height: 200px;
-  max-width: 800px;
+  max-width: 950px;
   overflow-y: scroll;
   overflow-x: auto;
-  background-color: black;
-  color: #D3BF94;
+  background-color: rgba(168, 5, 5, .72);
+  color: white;
   margin: 0 auto;
+  font-size: .8rem;
 }
 
 table, th, td {
-  border: 1px solid red;
+  border: 1px solid white;
   text-align: center;
 }
 
 .beer-table {
   table-layout: auto;
   text-align: left;
+  table-layout: fixed;
 }
 
 
 th {
   font-weight: bold;
-  background-color: red;
+  background-color: rgb(43, 44, 41);
   color: white
 }
 
@@ -236,8 +239,10 @@ thead {
 }
 
 .team_wrap p {
-  vertical-align: middle;
-  line-height: 200px;
+  display: flex;
+  line-height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .team_description {
   position: absolute;
@@ -249,7 +254,6 @@ thead {
   color: #D9D9DB;
   visibility: hidden;
   opacity: 0;
-  max-height: 200px;
 
   /* transition effect. not necessary */
   transition: opacity .05s, visibility .2s;
@@ -303,9 +307,9 @@ form p {
 
 button {
   margin: 5px 0 0 0;
-  background-color: red;
+  background-color: rgb(168, 5, 5);
   border-radius: 5px;
-  border: 1px solid black;
+  border: 5px solid rgb(168, 5, 5);
   color: white;
   font-size: 1.5rem;
   font-family: 'Inknut Antiqua', serif;
@@ -316,7 +320,7 @@ button {
 
 @media screen and (max-width: 500px) {
   header {
-    background-color: #9B805A;
+    background-color: rgb(43, 44, 41);
   }
 
   .navbar {
@@ -349,6 +353,7 @@ button {
 
   h1 {
    padding: 0px;
+   font-size: 2rem;
   }
 
   .banner {
@@ -367,8 +372,12 @@ button {
     justify-content: center;
   }
 
+input[type=text], select {
+    width: 90%;
+
 }
 
+}
 
 
 /*------------------     next   -----------------------------*/
